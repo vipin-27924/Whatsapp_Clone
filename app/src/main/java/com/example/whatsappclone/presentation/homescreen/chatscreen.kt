@@ -60,13 +60,13 @@ Spacer(modifier = Modifier
             )
             {
                 Text(
-                    text = chatListModel.name,
+                    text = chatListModel.name.toString(),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
                 )
 
                 Text(
-                    text = chatListModel.Time,
+                    text = chatListModel.Time.toString(),
                     fontSize = 12.sp,
                     fontWeight = FontWeight.Bold
                 )
@@ -75,7 +75,7 @@ Spacer(modifier = Modifier
             Spacer(modifier = Modifier.height(4.dp))
 
             Text(
-                text = chatListModel.message,
+                text = chatListModel.message.toString(),
                  color = Color.Gray,
                 fontSize = 14.sp,
                 fontWeight = FontWeight.SemiBold
